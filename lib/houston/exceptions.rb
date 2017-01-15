@@ -1,5 +1,6 @@
 require "houston/exceptions/engine"
 require "houston/exceptions/configuration"
+require "houston/adapters/error_tracker"
 
 module Houston
   module Exceptions
