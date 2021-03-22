@@ -142,7 +142,7 @@ module Houston
 
           def connection
             @connection ||= Faraday.new(url: "#{errbit_url}/api/v1").tap do |connection|
-              connection.use Faraday::RaiseErrors
+              connection.response :raise_error
             end
           end
 
